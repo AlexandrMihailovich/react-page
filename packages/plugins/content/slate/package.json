@@ -1,6 +1,6 @@
 {
   "name": "@react-page-nm/plugins-slate",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "./lib/index.js",
   "module": "./lib-es/index.js",
   "typings": "./lib/index.d.ts",
@@ -18,22 +18,19 @@
     "clean": "rimraf \"lib\" && rimraf \"lib-es\""
   },
   "peerDependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
     "@material-ui/core": "*",
     "@material-ui/icons": "*",
-    "@material-ui/styles": "*"
+    "@material-ui/styles": "*",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   },
   "dependencies": {
     "@guestbell/slate-common": "0.3.0",
     "@guestbell/slate-edit-blockquote": "0.3.0",
     "@guestbell/slate-edit-list": "0.3.0",
     "@react-page-nm/core": "0.0.0",
-    "@react-page-nm/ui": "0.0.0",
     "@react-page-nm/create-plugin-materialui": "0.0.0",
-    "uniforms": "^2.4.0",
-    "uniforms-bridge-json-schema": "^2.4.0",
-    "uniforms-material": "^2.4.0",
+    "@react-page-nm/ui": "0.0.0",
     "deep-rename-keys": "^0.2.1",
     "immutable": "3.8.2",
     "is-hotkey": "0.1.4",
@@ -47,7 +44,10 @@
     "slate-html-serializer": "^0.8.9",
     "slate-plain-serializer": "^0.7.9",
     "slate-react": "^0.22.9",
-    "slate-schema-violations": "0.1.39"
+    "slate-schema-violations": "0.1.39",
+    "uniforms": "^2.4.0",
+    "uniforms-bridge-json-schema": "^2.4.0",
+    "uniforms-material": "^2.4.0"
   },
   "publishConfig": {
     "access": "public"

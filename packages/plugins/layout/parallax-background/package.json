@@ -1,6 +1,6 @@
 {
   "name": "@react-page-nm/plugins-parallax-background",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "./lib/index.js",
   "module": "./lib-es/index.js",
   "author": "as",
@@ -17,17 +17,16 @@
     "clean": "rimraf \"lib\" && rimraf \"lib-es\""
   },
   "peerDependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
     "@material-ui/core": "*",
     "@material-ui/icons": "*",
-    "@material-ui/styles": "*"
+    "@material-ui/styles": "*",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   },
   "dependencies": {
     "@react-page-nm/core": "0.0.0",
     "@react-page-nm/ui": "0.0.0"
   },
-  "devDependencies": {},
   "publishConfig": {
     "access": "public"
   }
