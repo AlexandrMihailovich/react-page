@@ -25,8 +25,8 @@
     "react-dom": "^16.8.6"
   },
   "dependencies": {
-    "react-page-nm-core": "0.0.0",
-    "react-page-nm-ui": "0.0.0",
+    "react-page-nm-core": "*",
+    "react-page-nm-ui": "*",
     "react-player": "1.7.1"
   },
   "publishConfig": {

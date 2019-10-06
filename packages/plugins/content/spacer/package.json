@@ -26,8 +26,8 @@
   },
   "dependencies": {
     "classnames": "2.2.6",
-    "react-page-nm-core": "0.0.0",
-    "react-page-nm-ui": "0.0.0",
+    "react-page-nm-core": "*",
+    "react-page-nm-ui": "*",
     "react-resizable": "1.7.5"
   },
   "publishConfig": {
