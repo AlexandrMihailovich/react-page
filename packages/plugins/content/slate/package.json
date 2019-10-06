@@ -60,5 +60,5 @@
     "./lib/parseHtml/parseHtml.js": "./lib/parseHtml/parseHtml.browser.js",
     "./lib-es/parseHtml/parseHtml.js": "./lib-es/parseHtml/parseHtml.browser.js"
   },
-  "gitHead": "22adb242d40edb904018b2269db57534f1bd7b78"
+  "gitHead": "09d33cd23f265df773e17591a4fd45090e00296b"
 }
