@@ -1,6 +1,6 @@
 {
   "name": "@react-page-nm/examples",
-  "version": "1.1.0",
+  "version": "0.0.1",
   "private": true,
   "peerDependencies": {
     "react": "^16.8.6",

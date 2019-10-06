@@ -1,6 +1,6 @@
 {
   "name": "@react-page-nm/create-plugin-materialui",
-  "version": "1.2.0",
+  "version": "0.0.1",
   "main": "./lib/index.js",
   "module": "./lib-es/index.js",
   "sideEffects": false,
