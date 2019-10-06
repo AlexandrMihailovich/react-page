@@ -1,6 +1,6 @@
 {
   "name": "react-page-nm-react-page",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "author": "as",
   "license": "GNU Lesser General Public License v3.0",
   "dependencies": {
@@ -14,7 +14,7 @@
     "react-page-nm-plugins-spacer": "0.0.0",
     "react-page-nm-plugins-video": "0.0.0",
     "react-page-nm-renderer": "0.0.0",
-    "react-page-nm-ui": "*"
+    "react-page-nm-ui": "^4.0.1"
   },
   "publishConfig": {
     "access": "public"
