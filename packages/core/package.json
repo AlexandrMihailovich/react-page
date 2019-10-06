@@ -52,5 +52,6 @@
     "@types/jest": "^23.3.10",
     "@types/loadable__component": "^5.10.0",
     "@types/uuid": "^3.4.4"
-  }
+  },
+  "gitHead": "40d77e5424118bff9be21cb1ed0c836ad596f957"
 }
