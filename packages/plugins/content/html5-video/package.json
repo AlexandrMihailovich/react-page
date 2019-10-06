@@ -1,6 +1,6 @@
 {
   "name": "@react-page-nm/plugins-html5-video",
-  "version": "1.0.0",
+  "version": "2.0.0-alpha.0",
   "main": "./lib/index.js",
   "module": "./lib-es/index.js",
   "typings": "./lib/index.d.ts",
