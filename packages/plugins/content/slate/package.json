@@ -36,7 +36,7 @@
     "lodash.throttle": "4.1.1",
     "ramda": "^0.24.1",
     "react-page-nm-core": "*",
-    "react-page-nm-create-plugin-materialui": "0.0.0",
+    "react-page-nm-create-plugin-materialui": "*",
     "react-page-nm-ui": "^4.0.1",
     "react-portal": "4.1.5",
     "redux-undo": "1.0.0-beta9-7",

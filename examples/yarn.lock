@@ -1378,12 +1378,12 @@ array-includes@^3.0.3:
     es-abstract "^1.7.0"
 
 array-map@~0.0.0:
-  version "0.0.0"
+  version "*"
   resolved "https://registry.yarnpkg.com/array-map/-/array-map-0.0.0.tgz#88a2bab73d1cf7bcd5c1b118a003f66f665fa662"
   integrity sha1-iKK6tz0c97zVwbEYoAP2b2ZfpmI=
 
 array-reduce@~0.0.0:
-  version "0.0.0"
+  version "*"
   resolved "https://registry.yarnpkg.com/array-reduce/-/array-reduce-0.0.0.tgz#173899d3ffd1c7d9383e4479525dbe278cab5f2b"
   integrity sha1-FziZ0//Rx9k4PkR5Ul2+J4yrXys=
 
@@ -5813,7 +5813,7 @@ jsonfile@^4.0.0:
     graceful-fs "^4.1.6"
 
 jsonify@~0.0.0:
-  version "0.0.0"
+  version "*"
   resolved "https://registry.yarnpkg.com/jsonify/-/jsonify-0.0.0.tgz#2c74b6ee41d93ca51b7b5aaee8f503631d252a73"
   integrity sha1-LHS27kHZPKUbe1qu6PUDYx0lKnM=
 
@@ -6547,7 +6547,7 @@ node-libs-browser@^2.0.0:
     stream-http "^2.7.2"
     string_decoder "^1.0.0"
     timers-browserify "^2.0.4"
-    tty-browserify "0.0.0"
+    tty-browserify "*"
     url "^0.11.0"
     util "^0.11.0"
     vm-browserify "^1.0.1"
@@ -9538,7 +9538,7 @@ tslib@^1.9.0:
   integrity sha512-qOebF53frne81cf0S9B41ByenJ3/IuH8yJKngAX35CmiZySA0khhkovshKK+jGCaMnVomla7gVlIcc3EvKPbTQ==
 
 tty-browserify@0.0.0:
-  version "0.0.0"
+  version "*"
   resolved "https://registry.yarnpkg.com/tty-browserify/-/tty-browserify-0.0.0.tgz#a157ba402da24e9bf957f9aa69d524eed42901a6"
   integrity sha1-oVe6QC2iTpv5V/mqadUk7tQpAaY=
 
