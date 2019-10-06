@@ -1,6 +1,6 @@
 {
   "name": "@react-page-nm/ui",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "author": "as",
   "license": "GNU Lesser General Public License v3.0",
   "main": "./lib/index.js",
