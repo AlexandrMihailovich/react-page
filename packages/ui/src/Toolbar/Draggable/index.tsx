@@ -26,7 +26,7 @@ import { source, collect } from './helper/index';
 import classNames from 'classnames';
 import { connect } from 'react-redux';
 
-import { Actions, shouldPureComponentUpdate } from '@react-page-nm/core';
+import { Actions, shouldPureComponentUpdate } from 'react-page-nm-core';
 
 const instances = {};
 

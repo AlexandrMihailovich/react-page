@@ -1,4 +1,4 @@
-import { Migration } from '@react-page-nm/core/lib/service/plugin/classes';
+import { Migration } from 'react-page-nm-core/lib/service/plugin/classes';
 
 // tslint:disable-next-line:no-any
 const removeLeaves = (nodes: Array<any>) => {

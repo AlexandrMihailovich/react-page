@@ -1,10 +1,10 @@
 import * as React from 'react';
 
-import { lazyLoad } from '@react-page-nm/core';
+import { lazyLoad } from 'react-page-nm-core';
 import {
   LayoutPluginConfig,
   LayoutPluginProps
-} from '@react-page-nm/core/lib/service/plugin/classes';
+} from 'react-page-nm-core/lib/service/plugin/classes';
 import { LayoutPluginDefinition, ControlsType } from './types';
 
 type CustomizeFunction<T, CT> = (

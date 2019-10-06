@@ -29,18 +29,18 @@ Next, open the file _src/components/App.js_ and include the React Page:
 import React, { Component } from "react";
 
 // The editor core
-import Editor, { Editable, createEmptyState } from "@react-page-nm/core";
-import "@react-page-nm/core/lib/index.css"; // we also want to load the stylesheets
+import Editor, { Editable, createEmptyState } from "react-page-nm-core";
+import "react-page-nm-core/lib/index.css"; // we also want to load the stylesheets
 
 // Require our ui components (optional). You can implement and use your own ui too!
-import EditorUI from "@react-page-nm/ui";
-import "@react-page-nm/ui/lib/index.css";
+import EditorUI from "react-page-nm-ui";
+import "react-page-nm-ui/lib/index.css";
 
 // Load some exemplary plugins:
-import slate from "@react-page-nm/plugins-slate"; // The rich text area plugin
-import "@react-page-nm/plugins-slate/lib/index.css"; // Stylesheets for the rich text area plugin
-import parallax from "@react-page-nm/plugins-parallax-background"; // A plugin for parallax background images
-import "@react-page-nm/plugins-parallax-background/lib/index.css"; // Stylesheets for parallax background images
+import slate from "react-page-nm-plugins-slate"; // The rich text area plugin
+import "react-page-nm-plugins-slate/lib/index.css"; // Stylesheets for the rich text area plugin
+import parallax from "react-page-nm-plugins-parallax-background"; // A plugin for parallax background images
+import "react-page-nm-plugins-parallax-background/lib/index.css"; // Stylesheets for parallax background images
 
 // Define which plugins we want to use. We only have slate and parallax available, so load those.
 const plugins = {
@@ -90,7 +90,7 @@ The `ory-editor-renderer` package ships a lightweight HTML renderer module. You 
 and rendering the content client side.
 
 ```jsx
-import { HTMLRenderer } from "@react-page-nm/renderer";
+import { HTMLRenderer } from "react-page-nm-renderer";
 
 const state = {
   /* ... */
@@ -114,9 +114,9 @@ Use the `onChange` callback to obtain a copy of the editor's state for saving to
 
 ```jsx
 import React, { Component } from "react";
-import Editor, { Editable, createEmptyState } from "@react-page-nm/core";
-import slate from "@react-page-nm/plugins-slate"; // The rich text area plugin
-import EditorUI from "@react-page-nm/ui";
+import Editor, { Editable, createEmptyState } from "react-page-nm-core";
+import slate from "react-page-nm-plugins-slate"; // The rich text area plugin
+import EditorUI from "react-page-nm-ui";
 const EditorPlugins = {
   content: [slate()],
   layout: [
@@ -156,8 +156,8 @@ The state could then be fetched and rendered by doing something like:
 ```jsx
 import React, {Component} from 'react'
 
-import { HTMLRenderer } from '@react-page-nm/renderer'
-import { createEmptyState } from '@react-page-nm/core'
+import { HTMLRenderer } from 'react-page-nm-renderer'
+import { createEmptyState } from 'react-page-nm-core'
 
 class MyEditorRenderer extends Component {
 
@@ -191,7 +191,7 @@ and images. Native drag support can be enabled by writing a `NativePlugin` and p
 In this example, we will use the default plugin, and take a look at how you can create your own later.
 
 ```jsx
-import native from "@react-page-nm/plugins-default-native";
+import native from "react-page-nm-plugins-default-native";
 
 const editor = new Editor({
   plugins: {

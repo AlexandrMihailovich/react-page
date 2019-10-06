@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { lazyLoad } from '@react-page-nm/core';
+import { lazyLoad } from 'react-page-nm-core';
 
 const IconButton = lazyLoad(() => import('@material-ui/core/IconButton'));
 

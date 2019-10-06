@@ -22,10 +22,10 @@
 
 import createPlugin from './createPlugin';
 
-import { lazyLoad } from '@react-page-nm/core';
+import { lazyLoad } from 'react-page-nm-core';
 
 import ImageHtmlRenderer from './Renderer/ImageHtmlRenderer';
-import { ContentPluginConfig } from '@react-page-nm/core/lib/service/plugin/classes';
+import { ContentPluginConfig } from 'react-page-nm-core/lib/service/plugin/classes';
 import { ImageState } from './types/state';
 import { ImageSettings } from './types/settings';
 

@@ -1,5 +1,5 @@
 {
-  "name": "@react-page-nm/ui",
+  "name": "react-page-nm-ui",
   "version": "3.0.0",
   "author": "as",
   "license": "GNU Lesser General Public License v3.0",
@@ -27,7 +27,7 @@
     "@material-ui/core": "^4.3.3",
     "@material-ui/icons": "^4.2.1",
     "@material-ui/styles": "^4.3.3",
-    "@react-page-nm/core": "0.0.0",
+    "react-page-nm-core": "0.0.0",
     "classnames": "^2.2.5",
     "device.js": "^2.3.0",
     "lodash.throttle": "^4.1.1",
@@ -44,5 +44,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "09d33cd23f265df773e17591a4fd45090e00296b"
+  "gitHead": "91e05cb022ff640ab4a96c1523dc2f357ca10588"
 }

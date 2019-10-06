@@ -25,7 +25,7 @@ import Button from '../Button';
 
 import { connect } from 'react-redux';
 
-import { Selectors, Actions } from '@react-page-nm/core';
+import { Selectors, Actions } from 'react-page-nm-core';
 
 import { createStructuredSelector } from 'reselect';
 

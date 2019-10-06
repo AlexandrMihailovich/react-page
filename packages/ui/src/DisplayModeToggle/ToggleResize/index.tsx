@@ -22,7 +22,7 @@
 import * as React from 'react';
 import Resize from '@material-ui/icons/SettingsOverscan';
 import { connect } from 'react-redux';
-import { Selectors, Actions } from '@react-page-nm/core';
+import { Selectors, Actions } from 'react-page-nm-core';
 import { createStructuredSelector } from 'reselect';
 
 import Button from '../Button/index';

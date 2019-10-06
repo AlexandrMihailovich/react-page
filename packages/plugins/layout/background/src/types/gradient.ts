@@ -1,4 +1,4 @@
-import { RGBColor } from '@react-page-nm/ui/lib/ColorPicker/types';
+import { RGBColor } from 'react-page-nm-ui/lib/ColorPicker/types';
 
 export type Gradient = {
   opacity: number;

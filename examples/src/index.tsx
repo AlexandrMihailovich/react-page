@@ -24,58 +24,58 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
 // The editor core
-import Editor, { Editable, createEmptyState } from '@react-page-nm/core';
-import '@react-page-nm/core/lib/index.css'; // we also want to load the stylesheets
+import Editor, { Editable, createEmptyState } from 'react-page-nm-core';
+import 'react-page-nm-core/lib/index.css'; // we also want to load the stylesheets
 
 // The default ui components
-import EditorUi from '@react-page-nm/ui';
-import '@react-page-nm/ui/lib/index.css';
+import EditorUi from 'react-page-nm-ui';
+import 'react-page-nm-ui/lib/index.css';
 
 // The rich text area plugin
-import slate from '@react-page-nm/plugins-slate';
+import slate from 'react-page-nm-plugins-slate';
 
-import '@react-page-nm/plugins-slate/lib/index.css';
+import 'react-page-nm-plugins-slate/lib/index.css';
 
 // The spacer plugin
-import spacer from '@react-page-nm/plugins-spacer';
-import '@react-page-nm/plugins-spacer/lib/index.css';
+import spacer from 'react-page-nm-plugins-spacer';
+import 'react-page-nm-plugins-spacer/lib/index.css';
 
 // The image plugin
-import { imagePlugin } from '@react-page-nm/plugins-image';
-import '@react-page-nm/plugins-image/lib/index.css';
+import { imagePlugin } from 'react-page-nm-plugins-image';
+import 'react-page-nm-plugins-image/lib/index.css';
 
 // The video plugin
-import video from '@react-page-nm/plugins-video';
-import '@react-page-nm/plugins-video/lib/index.css';
+import video from 'react-page-nm-plugins-video';
+import 'react-page-nm-plugins-video/lib/index.css';
 
 // The parallax plugin
-import parallax from '@react-page-nm/plugins-parallax-background';
-import '@react-page-nm/plugins-parallax-background/lib/index.css';
+import parallax from 'react-page-nm-plugins-parallax-background';
+import 'react-page-nm-plugins-parallax-background/lib/index.css';
 
 // The background plugin
-import background from '@react-page-nm/plugins-background';
-import { ModeEnum } from '@react-page-nm/plugins-background';
-import '@react-page-nm/plugins-background/lib/index.css';
+import background from 'react-page-nm-plugins-background';
+import { ModeEnum } from 'react-page-nm-plugins-background';
+import 'react-page-nm-plugins-background/lib/index.css';
 
 // The html5-video plugin
-import html5video from '@react-page-nm/plugins-html5-video';
-import '@react-page-nm/plugins-html5-video/lib/index.css';
+import html5video from 'react-page-nm-plugins-html5-video';
+import 'react-page-nm-plugins-html5-video/lib/index.css';
 
 // The native handler plugin
-import native from '@react-page-nm/plugins-default-native';
+import native from 'react-page-nm-plugins-default-native';
 
 // The divider plugin
-import divider from '@react-page-nm/plugins-divider';
+import divider from 'react-page-nm-plugins-divider';
 
 // Renders json state to html, can be used on server and client side
-import { HTMLRenderer } from '@react-page-nm/renderer';
+import { HTMLRenderer } from 'react-page-nm-renderer';
 import customContentPlugin from './customContentPlugin';
 import customLayoutPlugin from './customLayoutPlugin';
 // The content state
 import content from './content';
 import './styles.css';
-import { ImageUploadType } from '@react-page-nm/ui/lib/ImageUpload/types';
-import { Plugins } from '@react-page-nm/core';
+import { ImageUploadType } from 'react-page-nm-ui/lib/ImageUpload/types';
+import { Plugins } from 'react-page-nm-core';
 import customSlatePlugin from './customSlatePlugin';
 
 const fakeImageUploadService: (url: string) => ImageUploadType = defaultUrl => (

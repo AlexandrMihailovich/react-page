@@ -22,7 +22,7 @@
 import * as React from 'react';
 import Drawer from '@material-ui/core/Drawer';
 import { connect } from 'react-redux';
-import { Selectors, Editor } from '@react-page-nm/core';
+import { Selectors, Editor } from 'react-page-nm-core';
 import { createStructuredSelector } from 'reselect';
 
 import List from '@material-ui/core/List';
@@ -32,11 +32,11 @@ import TextField from '@material-ui/core/TextField';
 import {
   LayoutPlugin,
   ContentPlugin
-} from '@react-page-nm/core/lib/service/plugin/classes';
+} from 'react-page-nm-core/lib/service/plugin/classes';
 import Item from './Item/index';
 
 import { useEditor } from './../Provider/index';
-import { Plugin } from '@react-page-nm/core/lib/service/plugin/classes';
+import { Plugin } from 'react-page-nm-core/lib/service/plugin/classes';
 
 export interface Translations {
   noPluginFoundContent: string | JSX.Element;

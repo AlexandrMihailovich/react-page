@@ -22,7 +22,7 @@
 
 import createPlugin from './createPlugin';
 
-import { lazyLoad } from '@react-page-nm/core';
+import { lazyLoad } from 'react-page-nm-core';
 
 import VideoHtmlRenderer from './Renderer/VideoHtmlRenderer';
 

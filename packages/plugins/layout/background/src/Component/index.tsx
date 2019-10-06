@@ -1,8 +1,8 @@
 import * as React from 'react';
 
 import { BackgroundProps } from '../types/component';
-import { RGBColor } from '@react-page-nm/ui/lib/ColorPicker/types';
-import { ImageLoaded } from '@react-page-nm/ui/lib/ImageUpload/types';
+import { RGBColor } from 'react-page-nm-ui/lib/ColorPicker/types';
+import { ImageLoaded } from 'react-page-nm-ui/lib/ImageUpload/types';
 import { ModeEnum } from '../types/ModeEnum';
 import { BackgroundApi } from '../types/api';
 

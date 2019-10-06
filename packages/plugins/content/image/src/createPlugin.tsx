@@ -25,11 +25,11 @@ import Component from './Component/index';
 import {
   ContentPluginProps,
   ContentPluginConfig
-} from '@react-page-nm/core/lib/service/plugin/classes';
+} from 'react-page-nm-core/lib/service/plugin/classes';
 import { ImageState } from './types/state';
 import { ImageSettings } from './types/settings';
 import { defaultSettings } from './default/settings';
-import { lazyLoad } from '@react-page-nm/core';
+import { lazyLoad } from 'react-page-nm-core';
 
 const Panorama = lazyLoad(() => import('@material-ui/icons/Panorama'));
 

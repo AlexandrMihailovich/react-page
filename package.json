@@ -54,7 +54,7 @@
     "coveralls": "cat ./coverage/lcov.info | coveralls",
     "bootstrap": "lerna bootstrap",
     "build": "cross-env NODE_ENV=production lerna run build --stream",
-    "build:lib": "cross-env NODE_ENV=production lerna run build --ignore @react-page-nm/examples --stream",
+    "build:lib": "cross-env NODE_ENV=production lerna run build --ignore react-page-nm-examples --stream",
     "build:watch": "cross-env NODE_ENV=development lerna run build:watch --parallel",
     "clean": "lerna run clean && find . -name tsconfig-es.tsbuildinfo  -delete && find . -name tsconfig.tsbuildinfo  -delete",
     "clean:lerna": "lerna clean --yes",

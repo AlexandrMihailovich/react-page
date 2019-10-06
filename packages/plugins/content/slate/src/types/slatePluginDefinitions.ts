@@ -1,6 +1,6 @@
 import { Editor, Value } from 'slate';
 import { NextType } from '../types/next';
-import { JsonSchema } from '@react-page-nm/create-plugin-materialui';
+import { JsonSchema } from 'react-page-nm-create-plugin-materialui';
 import { Translations } from './translations';
 
 export interface PluginButtonProps {

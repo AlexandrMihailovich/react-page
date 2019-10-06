@@ -5,7 +5,7 @@ import {
   COLOR_MODE_FLAG,
   GRADIENT_MODE_FLAG
 } from './../const/mode';
-import { defaultTranslations as defaultImageUploadTranslations } from '@react-page-nm/ui/lib/ImageUpload/defaultTranslations';
+import { defaultTranslations as defaultImageUploadTranslations } from 'react-page-nm-ui/lib/ImageUpload/defaultTranslations';
 
 export const defaultTranslations = {
   ...defaultImageUploadTranslations,

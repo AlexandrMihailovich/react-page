@@ -27,7 +27,7 @@ import { MakeOptional } from './types/makeOptional';
 import { ModeEnum } from './types/ModeEnum';
 
 export { ModeEnum };
-import { lazyLoad } from '@react-page-nm/core';
+import { lazyLoad } from 'react-page-nm-core';
 
 const BackgroundDefaultControls = lazyLoad(() =>
   import('./Controls/BackgroundDefaultControls')

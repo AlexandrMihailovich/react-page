@@ -1,5 +1,5 @@
 import createListsPlugin from '../../pluginFactories/createListPlugin';
-import { lazyLoad } from '@react-page-nm/core';
+import { lazyLoad } from 'react-page-nm-core';
 import React from 'react';
 import DEFAULT_NODE from '../DEFAULT_NODE';
 

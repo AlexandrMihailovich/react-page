@@ -1,23 +1,23 @@
 {
-  "name": "@react-page-nm/react-page",
+  "name": "react-page-nm-react-page",
   "version": "3.0.0",
   "author": "as",
   "license": "GNU Lesser General Public License v3.0",
   "dependencies": {
-    "@react-page-nm/core": "0.0.0",
-    "@react-page-nm/plugins-background": "0.0.0",
-    "@react-page-nm/plugins-default-native": "0.0.0",
-    "@react-page-nm/plugins-divider": "0.0.0",
-    "@react-page-nm/plugins-image": "0.0.0",
-    "@react-page-nm/plugins-parallax-background": "0.0.0",
-    "@react-page-nm/plugins-slate": "0.0.0",
-    "@react-page-nm/plugins-spacer": "0.0.0",
-    "@react-page-nm/plugins-video": "0.0.0",
-    "@react-page-nm/renderer": "0.0.0",
-    "@react-page-nm/ui": "0.0.0"
+    "react-page-nm-core": "0.0.0",
+    "react-page-nm-plugins-background": "0.0.0",
+    "react-page-nm-plugins-default-native": "0.0.0",
+    "react-page-nm-plugins-divider": "0.0.0",
+    "react-page-nm-plugins-image": "0.0.0",
+    "react-page-nm-plugins-parallax-background": "0.0.0",
+    "react-page-nm-plugins-slate": "0.0.0",
+    "react-page-nm-plugins-spacer": "0.0.0",
+    "react-page-nm-plugins-video": "0.0.0",
+    "react-page-nm-renderer": "0.0.0",
+    "react-page-nm-ui": "0.0.0"
   },
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "09d33cd23f265df773e17591a4fd45090e00296b"
+  "gitHead": "91e05cb022ff640ab4a96c1523dc2f357ca10588"
 }

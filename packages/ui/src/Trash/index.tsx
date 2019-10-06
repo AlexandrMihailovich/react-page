@@ -24,7 +24,7 @@ import * as React from 'react';
 import { DropTarget as dropTarget } from 'react-dnd';
 import Delete from '@material-ui/icons/Delete';
 import Fab from '@material-ui/core/Fab';
-import { Editor, Actions, Selectors } from '@react-page-nm/core';
+import { Editor, Actions, Selectors } from 'react-page-nm-core';
 import { connect } from 'react-redux';
 import classNames from 'classnames';
 

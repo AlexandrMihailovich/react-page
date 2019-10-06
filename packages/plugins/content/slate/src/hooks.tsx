@@ -32,7 +32,7 @@ import { Document, Value } from 'slate';
 
 import Plain from 'slate-plain-serializer';
 
-import { AbstractCell } from '@react-page-nm/core/lib/types/editable';
+import { AbstractCell } from 'react-page-nm-core/lib/types/editable';
 
 export const merge = (states: Object[]): Object => {
   const nodes = map(path(['editorState', 'document', 'nodes']), states);

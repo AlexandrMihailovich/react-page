@@ -22,16 +22,16 @@
 
 import * as React from 'react';
 import classNames from 'classnames';
-import PluginService from '@react-page-nm/core/lib/service/plugin';
-import { editable as reducer } from '@react-page-nm/core/lib/reducer/editable';
+import PluginService from 'react-page-nm-core/lib/service/plugin';
+import { editable as reducer } from 'react-page-nm-core/lib/reducer/editable';
 import {
   Cell,
   Row,
   Layout,
   Content
-} from '@react-page-nm/core/lib/types/editable';
-import { Plugins } from '@react-page-nm/core/lib/service/plugin/classes';
-import { EditableType } from '@react-page-nm/core/lib/types/editable';
+} from 'react-page-nm-core/lib/types/editable';
+import { Plugins } from 'react-page-nm-core/lib/service/plugin/classes';
+import { EditableType } from 'react-page-nm-core/lib/types/editable';
 
 const gridClass = (size: number = 12): string =>
   `ory-cell-sm-${size} ory-cell-xs-12`;

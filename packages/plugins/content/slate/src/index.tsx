@@ -31,7 +31,7 @@ import * as hooks from './hooks';
 import v002 from './migrations/v002';
 import v003 from './migrations/v003';
 
-import { ContentPluginConfig } from '@react-page-nm/core/lib/service/plugin/classes';
+import { ContentPluginConfig } from 'react-page-nm-core/lib/service/plugin/classes';
 import { SlateState } from './types/state';
 
 import { pathOr } from 'ramda/src/pathOr';
@@ -43,7 +43,7 @@ import * as slatePlugins from './plugins/index';
 import * as pluginFactories from './pluginFactories/index';
 import serialization from './serialization';
 import { SlateProps } from './types/component';
-import { lazyLoad } from '@react-page-nm/core';
+import { lazyLoad } from 'react-page-nm-core';
 import createInitialState from './serialization/createInitialState';
 import flattenDeep from './flattenDeep';
 import { SlateRendererProps } from './types/renderer';

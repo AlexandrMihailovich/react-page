@@ -1,4 +1,4 @@
-import { ContentPluginProps } from '@react-page-nm/core/lib/service/plugin/classes';
+import { ContentPluginProps } from 'react-page-nm-core/lib/service/plugin/classes';
 import { ImageState } from './state';
 import { ImageSettings } from './settings';
 

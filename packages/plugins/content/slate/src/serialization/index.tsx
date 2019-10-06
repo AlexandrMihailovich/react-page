@@ -3,8 +3,8 @@ import Html from 'slate-html-serializer';
 import { SlateState } from '../types/state';
 import { Value, ValueJSON } from 'slate';
 
-import { EditorState } from '@react-page-nm/core/lib/types/editor';
-import { PluginProps } from '@react-page-nm/core/lib/service/plugin/classes';
+import { EditorState } from 'react-page-nm-core/lib/types/editor';
+import { PluginProps } from 'react-page-nm-core/lib/service/plugin/classes';
 import createInitialState from './createInitialState';
 
 import parseHtml from '../parseHtml/parseHtml';

@@ -1,5 +1,5 @@
 {
-  "name": "@react-page-nm/create-plugin-materialui",
+  "name": "react-page-nm-create-plugin-materialui",
   "version": "3.0.0",
   "main": "./lib/index.js",
   "module": "./lib-es/index.js",
@@ -23,8 +23,8 @@
     "react-dom": "^16.0.0"
   },
   "dependencies": {
-    "@react-page-nm/core": "0.0.0",
-    "@react-page-nm/ui": "0.0.0",
+    "react-page-nm-core": "0.0.0",
+    "react-page-nm-ui": "0.0.0",
     "lodash.debounce": "^4.0.8",
     "uniforms": "^2.4.0",
     "uniforms-bridge-json-schema": "^2.4.0",
@@ -36,5 +36,5 @@
   "devDependencies": {
     "@types/json-schema": "^7.0.3"
   },
-  "gitHead": "09d33cd23f265df773e17591a4fd45090e00296b"
+  "gitHead": "91e05cb022ff640ab4a96c1523dc2f357ca10588"
 }

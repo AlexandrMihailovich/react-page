@@ -1,4 +1,4 @@
-// something is wrong with lerna, typescript and this import: import { lazyLoad } from '@react-page-nm/core';
+// something is wrong with lerna, typescript and this import: import { lazyLoad } from 'react-page-nm-core';
 import loadable from '@loadable/component';
 import React from 'react';
 import darkTheme from './ThemeProvider/DarkTheme';

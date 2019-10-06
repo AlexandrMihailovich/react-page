@@ -819,7 +819,7 @@ Returns **\[...cell]**
 ### Examples
 
 ```javascript
-import { reducer } from '@react-page-nm/core'
+import { reducer } from 'react-page-nm-core'
 const reducer = combineReducers({
   reactPage: reducer,
   // ...

@@ -23,13 +23,13 @@
 import * as React from 'react';
 import Spacer from './Component/index';
 
-import { ContentPluginProps } from '@react-page-nm/core/lib/service/plugin/classes';
-import { ContentPluginConfig } from '@react-page-nm/core/lib/service/plugin/classes';
+import { ContentPluginProps } from 'react-page-nm-core/lib/service/plugin/classes';
+import { ContentPluginConfig } from 'react-page-nm-core/lib/service/plugin/classes';
 import { SpacerSettings } from './types/settings';
 import { SpacerProps } from './types/component';
 import { SpacerState } from './types/state';
 import { defaultSettings } from './default/settings';
-import { lazyLoad } from '@react-page-nm/core';
+import { lazyLoad } from 'react-page-nm-core';
 const AspectRatio = lazyLoad(() => import('@material-ui/icons/AspectRatio'));
 const createPlugin: (
   settings: SpacerSettings

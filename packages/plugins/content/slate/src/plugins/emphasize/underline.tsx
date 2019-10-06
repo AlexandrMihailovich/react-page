@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { lazyLoad } from '@react-page-nm/core';
+import { lazyLoad } from 'react-page-nm-core';
 import createMarkPlugin from '../../pluginFactories/createMarkPlugin';
 
 const UnderlinedIcon = lazyLoad(() =>

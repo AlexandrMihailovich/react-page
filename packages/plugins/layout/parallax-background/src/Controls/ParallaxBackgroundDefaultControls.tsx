@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { ParallaxBackgroundControlsProps } from '../types/controls';
 import TextField from '@material-ui/core/TextField';
-import { BottomToolbar } from '@react-page-nm/ui';
+import { BottomToolbar } from 'react-page-nm-ui';
 
 const ParallaxBackgroundDefaultControls: React.SFC<
   ParallaxBackgroundControlsProps

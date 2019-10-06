@@ -23,12 +23,12 @@
 import createPlugin from './createPlugin';
 import ParallaxBackgroundHtmlRenderer from './Renderer/ParallaxBackgroundHtmlRenderer';
 
-import { LayoutPluginConfig } from '@react-page-nm/core/lib/service/plugin/classes';
+import { LayoutPluginConfig } from 'react-page-nm-core/lib/service/plugin/classes';
 import { ParallaxBackgroundState } from './types/state';
 import { ParallaxBackgroundSettings } from './types/settings';
 import { MakeOptional } from './types/makeOptional';
 
-import { lazyLoad } from '@react-page-nm/core';
+import { lazyLoad } from 'react-page-nm-core';
 const ParallaxBackgroundDefaultControls = lazyLoad(() =>
   import('./Controls/ParallaxBackgroundDefaultControls')
 );

@@ -23,12 +23,12 @@
 import * as React from 'react';
 import { v4 } from 'uuid';
 
-import { LayoutPluginConfig } from '@react-page-nm/core/lib/service/plugin/classes';
+import { LayoutPluginConfig } from 'react-page-nm-core/lib/service/plugin/classes';
 import { ParallaxBackgroundSettings } from './types/settings';
 import { ParallaxBackgroundState } from './types/state';
-import { ContentPluginProps } from '@react-page-nm/core/lib/service/plugin/classes';
+import { ContentPluginProps } from 'react-page-nm-core/lib/service/plugin/classes';
 import Component from './Component';
-import { lazyLoad } from '@react-page-nm/core';
+import { lazyLoad } from 'react-page-nm-core';
 
 const Icon = lazyLoad(() => import('@material-ui/icons/CropLandscape'));
 

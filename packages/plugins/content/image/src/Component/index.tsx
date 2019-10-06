@@ -24,7 +24,7 @@ import * as React from 'react';
 import {
   ImageLoaded,
   ImageUploaded
-} from '@react-page-nm/ui/lib/ImageUpload/types';
+} from 'react-page-nm-ui/lib/ImageUpload/types';
 import { ImageProps } from '../types/component';
 import { ImageState } from './../types/state';
 

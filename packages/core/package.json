@@ -1,5 +1,5 @@
 {
-  "name": "@react-page-nm/core",
+  "name": "react-page-nm-core",
   "version": "3.0.0",
   "main": "./lib/index.js",
   "module": "./lib-es/index.js",
@@ -53,5 +53,5 @@
     "@types/loadable__component": "^5.10.0",
     "@types/uuid": "^3.4.4"
   },
-  "gitHead": "09d33cd23f265df773e17591a4fd45090e00296b"
+  "gitHead": "91e05cb022ff640ab4a96c1523dc2f357ca10588"
 }

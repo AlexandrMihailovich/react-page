@@ -23,11 +23,11 @@
 import { mount, render } from 'enzyme';
 import * as React from 'react';
 import { HTMLRenderer } from '../index';
-import slate from '@react-page-nm/plugins-slate';
-import { LayoutPluginProps } from '@react-page-nm/core/lib/service/plugin/classes';
-import { Plugins } from '@react-page-nm/core/src/service/plugin/classes';
-import { ContentPluginProps } from '@react-page-nm/core/lib/service/plugin/classes';
-import { EditableType } from '@react-page-nm/core/lib/types/editable';
+import slate from 'react-page-nm-plugins-slate';
+import { LayoutPluginProps } from 'react-page-nm-core/lib/service/plugin/classes';
+import { Plugins } from 'react-page-nm-core/src/service/plugin/classes';
+import { ContentPluginProps } from 'react-page-nm-core/lib/service/plugin/classes';
+import { EditableType } from 'react-page-nm-core/lib/types/editable';
 
 const Layout = ({ children, state: { className } }) => (
   <div className={`${className}`}>{children}</div>

@@ -1,7 +1,7 @@
 import {
   ImageLoaded,
   ImageUploaded
-} from '@react-page-nm/ui/lib/ImageUpload/types';
+} from 'react-page-nm-ui/lib/ImageUpload/types';
 
 export interface ImageApi {
   handleImageLoaded: (image: ImageLoaded) => void;
