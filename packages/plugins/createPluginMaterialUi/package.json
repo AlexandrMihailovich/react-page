@@ -1,6 +1,6 @@
 {
   "name": "react-page-nm-create-plugin-materialui",
-  "version": "4.0.1",
+  "version": "4.0.3",
   "main": "./lib/index.js",
   "module": "./lib-es/index.js",
   "sideEffects": false,
@@ -25,7 +25,7 @@
   "dependencies": {
     "lodash.debounce": "^4.0.8",
     "react-page-nm-core": "*",
-    "react-page-nm-ui": "^4.0.1",
+    "react-page-nm-ui": "^4.0.3",
     "uniforms": "^2.4.0",
     "uniforms-bridge-json-schema": "^2.4.0",
     "uniforms-material": "^2.4.0"

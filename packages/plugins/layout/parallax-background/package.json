@@ -1,6 +1,6 @@
 {
   "name": "react-page-nm-plugins-parallax-background",
-  "version": "4.0.1",
+  "version": "4.0.3",
   "main": "./lib/index.js",
   "module": "./lib-es/index.js",
   "author": "as",
@@ -25,7 +25,7 @@
   },
   "dependencies": {
     "react-page-nm-core": "*",
-    "react-page-nm-ui": "^4.0.1"
+    "react-page-nm-ui": "^4.0.3"
   },
   "publishConfig": {
     "access": "public"
