@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import createDataPlugin from '../pluginFactories/createDataPlugin';
-import { lazyLoad } from '@react-page/core';
+import { lazyLoad } from '@react-page-nm/core';
 
 const AlignLeftIcon = lazyLoad(() =>
   import('@material-ui/icons/FormatAlignLeft')

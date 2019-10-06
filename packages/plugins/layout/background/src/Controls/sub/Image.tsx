@@ -2,12 +2,12 @@ import * as React from 'react';
 import Switch from '@material-ui/core/Switch';
 import TextField from '@material-ui/core/TextField';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
-import { ImageUpload } from '@react-page/ui';
+import { ImageUpload } from '@react-page-nm/ui';
 import Typography from '@material-ui/core/Typography';
 import {
   ImageLoaded,
   ImageUploaded
-} from '@react-page/ui/lib/ImageUpload/types';
+} from '@react-page-nm/ui/lib/ImageUpload/types';
 import { BackgroundProps } from '../../types/component';
 
 export interface ImageComponentProps {

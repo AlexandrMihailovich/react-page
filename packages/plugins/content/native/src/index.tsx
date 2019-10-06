@@ -22,7 +22,7 @@
 
 import * as React from 'react';
 import { NativeState } from './types/state';
-import { NativeFactory } from '@react-page/core';
+import { NativeFactory } from '@react-page-nm/core';
 
 export interface NativeProps {
   state: NativeState;

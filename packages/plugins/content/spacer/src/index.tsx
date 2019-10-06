@@ -23,7 +23,7 @@
 import createPlugin from './createPlugin';
 
 import SpacerHtmlRenderer from './Renderer/SpacerHtmlRenderer';
-import { lazyLoad } from '@react-page/core';
+import { lazyLoad } from '@react-page-nm/core';
 
 const SpacerDefaultControls = lazyLoad(() =>
   import('./Controls/SpacerDefaultControls')

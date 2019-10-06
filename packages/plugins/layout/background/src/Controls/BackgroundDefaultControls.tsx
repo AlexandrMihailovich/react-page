@@ -6,7 +6,7 @@ import Switch from '@material-ui/core/Switch';
 import ColorComponent from './sub/Color';
 import LinearGradientComponent from './sub/LinearGradient';
 import ImageComponent from './sub/Image';
-import { BottomToolbar } from '@react-page/ui';
+import { BottomToolbar } from '@react-page-nm/ui';
 
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';

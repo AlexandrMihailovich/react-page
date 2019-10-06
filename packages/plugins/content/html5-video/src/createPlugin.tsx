@@ -25,13 +25,13 @@ import * as React from 'react';
 import {
   ContentPluginProps,
   ContentPluginConfig
-} from '@react-page/core/lib/service/plugin/classes';
+} from '@react-page-nm/core/lib/service/plugin/classes';
 import Html5Video from './Component';
 import { Html5VideoSettings } from './types/settings';
 import { Html5VideoProps } from './types/component';
 import { Html5VideoState } from './types/state';
 import { defaultSettings } from './default/settings';
-import { lazyLoad } from '@react-page/core';
+import { lazyLoad } from '@react-page-nm/core';
 
 const Icon = lazyLoad(() => import('@material-ui/icons/PlayArrow'));
 export type Props = ContentPluginProps;

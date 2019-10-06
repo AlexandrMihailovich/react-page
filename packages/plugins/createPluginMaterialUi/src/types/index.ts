@@ -6,7 +6,7 @@ import {
   LayoutPluginConfig,
   LayoutPluginProps,
   PluginProps
-} from '@react-page/core/lib/service/plugin/classes';
+} from '@react-page-nm/core/lib/service/plugin/classes';
 
 export type ControlsType<T> = React.ComponentType<ControlProps<T>>;
 

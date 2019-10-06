@@ -8,19 +8,19 @@ The mantainers of this package have changed, the project has been renamed to `re
 
 |Old|New|
 |-|-|
-|ory-editor|@react-page/react-page|
-|ory-editor-core|@react-page/core|
-|ory-editor-plugins-divider|@react-page/plugins-divider|
-|ory-editor-plugins-html5-video|@react-page/plugins-html5-video|
-|ory-editor-plugins-image|@react-page/plugins-image|
-|ory-editor-plugins-default-native|@react-page/plugins-default-native|
-|ory-editor-plugins-slate|@react-page/plugins-slate|
-|ory-editor-plugins-spacer|@react-page/plugins-spacer|
-|ory-editor-plugins-video|@react-page/plugins-video|
-|ory-editor-plugins-background|@react-page/plugins-background|
-|ory-editor-plugins-parallax-background|@react-page/plugins-parallax-background|
-|ory-editor-renderer|@react-page/renderer|
-|ory-editor-ui|@react-page/ui|
+|ory-editor|@react-page-nm/react-page|
+|ory-editor-core|@react-page-nm/core|
+|ory-editor-plugins-divider|@react-page-nm/plugins-divider|
+|ory-editor-plugins-html5-video|@react-page-nm/plugins-html5-video|
+|ory-editor-plugins-image|@react-page-nm/plugins-image|
+|ory-editor-plugins-default-native|@react-page-nm/plugins-default-native|
+|ory-editor-plugins-slate|@react-page-nm/plugins-slate|
+|ory-editor-plugins-spacer|@react-page-nm/plugins-spacer|
+|ory-editor-plugins-video|@react-page-nm/plugins-video|
+|ory-editor-plugins-background|@react-page-nm/plugins-background|
+|ory-editor-plugins-parallax-background|@react-page-nm/plugins-parallax-background|
+|ory-editor-renderer|@react-page-nm/renderer|
+|ory-editor-ui|@react-page-nm/ui|
 
 ## 0.6.x
 We have added full typescript support in this release. That means you might get into trouble if you use typescript, write your own plugins and made false assumptions about props passed by ory editor.

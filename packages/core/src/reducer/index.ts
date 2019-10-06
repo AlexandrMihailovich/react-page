@@ -36,7 +36,7 @@ const reducer = combineReducers({
 
 /**
  * @example
- * import { reducer } from '@react-page/core'
+ * import { reducer } from '@react-page-nm/core'
  * const reducer = combineReducers({
  *   reactPage: reducer,
  *   // ...

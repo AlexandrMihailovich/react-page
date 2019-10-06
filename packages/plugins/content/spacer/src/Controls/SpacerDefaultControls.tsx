@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { SpacerControlsProps } from '../types/controls';
 import { Resizable } from 'react-resizable';
-import { BottomToolbar } from '@react-page/ui';
+import { BottomToolbar } from '@react-page-nm/ui';
 
 import { defaultSpacerState } from './../default/state';
 import classNames from 'classnames';

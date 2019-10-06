@@ -21,7 +21,7 @@
  */
 
 import createPlugin from './createPlugin';
-import { lazyLoad } from '@react-page/core';
+import { lazyLoad } from '@react-page-nm/core';
 
 import Html5VideoHtmlRenderer from './Renderer/Html5VideoHtmlRenderer';
 

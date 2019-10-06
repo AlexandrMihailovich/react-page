@@ -1,10 +1,10 @@
 {
-  "name": "@react-page/plugins-html5-video",
-  "version": "0.0.0",
+  "name": "@react-page-nm/plugins-html5-video",
+  "version": "1.0.0",
   "main": "./lib/index.js",
   "module": "./lib-es/index.js",
   "typings": "./lib/index.d.ts",
-  "author": "ORY GmbH",
+  "author": "as",
   "license": "GNU Lesser General Public License v3.0",
   "scripts": {
     "transpile": "babel ./src --out-dir lib --source-maps --copy-files --only **/*.ts,**/*.tsx --extensions .ts,.tsx --ignore **/*.d.ts",
@@ -26,8 +26,8 @@
     "@material-ui/styles": "*"
   },
   "dependencies": {
-    "@react-page/core": "0.0.0",
-    "@react-page/ui": "0.0.0"
+    "@react-page-nm/core": "0.0.0",
+    "@react-page-nm/ui": "0.0.0"
   },
   "publishConfig": {
     "access": "public"

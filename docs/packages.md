@@ -2,27 +2,27 @@
 
 ## Packages
 
-The editor consists of multiple packages. A meta package available at [react-page](https://www.npmjs.com/package/@react-page/react-page).
+The editor consists of multiple packages. A meta package available at [react-page](https://www.npmjs.com/package/@react-page-nm/react-page).
 
-## [@react-page/core](https://www.npmjs.com/package/@react-page/core)
+## [@react-page-nm/core](https://www.npmjs.com/package/@react-page-nm/core)
 
 This package is the React Page's core. It contains the logic for creating and modifying layouts and is responsible for
 handling plugins.
 
-## [@react-page/ui](https://www.npmjs.com/package/@react-page/ui)
+## [@react-page-nm/ui](https://www.npmjs.com/package/@react-page-nm/ui)
 
 This repository contains React Page UI React Components that are based on
 [mui-org/material-ui](https://github.com/mui-org/material-ui). While there is no need for you to use them, they
 offer an easy way to start working with the React Page.
 
-## [@react-page/renderer](https://www.npmjs.com/package/@react-page/renderer)
+## [@react-page-nm/renderer](https://www.npmjs.com/package/@react-page-nm/renderer)
 
 This package contains rendering components for React Page states. Currently, only HTML rendering is supported. The
 HTML rendering component is responsible for outputting static HTML and mounting dynamic plugins on the user-agent side.
 
 ## Plugins
 
-### [@react-page/plugins-slate](https://www.npmjs.com/package/@react-page/plugins-slate)
+### [@react-page-nm/plugins-slate](https://www.npmjs.com/package/@react-page-nm/plugins-slate)
 
 The text editing allows you to create and modify rich-text and is optimized for use with the React Page. We strongly encourage using our text editing solution. You can check more config options about this plugin [here](plugins/slate.md).
 
@@ -33,7 +33,7 @@ The text editing allows you to create and modify rich-text and is optimized for 
   </figure>
 </p>
 
-### [@react-page/plugins-image](https://www.npmjs.com/package/@react-page/plugins-image)
+### [@react-page-nm/plugins-image](https://www.npmjs.com/package/@react-page-nm/plugins-image)
 
 The image plugin allows you to add images to your content by entering their URL. The image plugin does not support
 uploads.
@@ -47,7 +47,7 @@ uploads.
 
 The image plugin is not configurable.
 
-### [@react-page/plugins-video](https://www.npmjs.com/package/@react-page/plugins-video)
+### [@react-page-nm/plugins-video](https://www.npmjs.com/package/@react-page-nm/plugins-video)
 
 The image plugin allows you to add images to your content by entering their URL. The image plugin does not support
 uploads.
@@ -61,7 +61,7 @@ uploads.
 
 The video plugin is not configurable.
 
-### [@react-page/plugins-spacer](https://www.npmjs.com/package/@react-page/plugins-spacer)
+### [@react-page-nm/plugins-spacer](https://www.npmjs.com/package/@react-page-nm/plugins-spacer)
 
 The spacer is a plugin which you can use to create an empty fixed height cell.
 
@@ -74,7 +74,7 @@ The spacer is a plugin which you can use to create an empty fixed height cell.
 
 The spacer plugin is not configurable.
 
-### [@react-page/plugins-parallax-background](https://www.npmjs.com/package/@react-page/plugins-parallax-background)
+### [@react-page-nm/plugins-parallax-background](https://www.npmjs.com/package/@react-page-nm/plugins-parallax-background)
 
 The parallax background plugin is a layout plugin, allowing you to add a parallax background image to your content.
 

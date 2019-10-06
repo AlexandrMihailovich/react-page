@@ -3,7 +3,7 @@ import { ControlProps } from '../types';
 
 import { AutoForm, AutoFields } from 'uniforms-material';
 import debounce from 'lodash.debounce';
-import { BottomToolbar } from '@react-page/ui';
+import { BottomToolbar } from '@react-page-nm/ui';
 import makeUniformsSchema from '../utils/makeUniformsSchema';
 
 function Controls<T>(props: ControlProps<T>) {

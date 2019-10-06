@@ -6,7 +6,7 @@ import {
   SlatePluginDefinition,
   PluginButtonProps
 } from '../types/slatePluginDefinitions';
-import { lazyLoad } from '@react-page/core';
+import { lazyLoad } from '@react-page-nm/core';
 
 function createBasePlugin<T extends {}>(
   pluginDefintion: SlatePluginDefinition<T>

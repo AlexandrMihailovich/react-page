@@ -1,6 +1,6 @@
 ## Create your own plugin with default material-ui controls
 
-Because it can be tedious to implement controls for a plugin, we started to develop a plugin that make this much easier: `@react-page/create-plugin-materialui`
+Because it can be tedious to implement controls for a plugin, we started to develop a plugin that make this much easier: `@react-page-nm/create-plugin-materialui`
 
 See [the readme of this library for more information](/packages/plugins/createPluginMaterialUi/README.md)
 
@@ -99,7 +99,7 @@ A layout plugin will require an initial children, otherwise, it will automatical
 
 ```jsx
 import React from "react";
-import slate from "@react-page/plugins-slate";
+import slate from "@react-page-nm/plugins-slate";
 
 // You are obviously not limited to material-ui, but we really enjoy
 // the material-ui svg icons!

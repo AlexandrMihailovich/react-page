@@ -1,4 +1,4 @@
-import { createLayoutPlugin } from '@react-page/create-plugin-materialui';
+import { createLayoutPlugin } from '@react-page-nm/create-plugin-materialui';
 import React from 'react';
 import { v4 } from 'uuid';
 // tslint:disable-next-line:no-any

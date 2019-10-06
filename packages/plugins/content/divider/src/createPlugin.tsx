@@ -1,12 +1,12 @@
 import * as React from 'react';
 
-import { ContentPluginConfig } from '@react-page/core/lib/service/plugin/classes';
+import { ContentPluginConfig } from '@react-page-nm/core/lib/service/plugin/classes';
 import Divider from './Component';
 import { DividerSettings } from './types/settings';
 import { DividerProps } from './types/component';
 import { DividerState } from './types/state';
 import { defaultSettings } from './default/settings';
-import { lazyLoad } from '@react-page/core';
+import { lazyLoad } from '@react-page-nm/core';
 
 const Remove = lazyLoad(() => import('@material-ui/icons/Remove'));
 

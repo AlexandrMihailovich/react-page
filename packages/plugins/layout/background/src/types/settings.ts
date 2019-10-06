@@ -1,8 +1,8 @@
 import { BackgroundRendererProps } from './renderer';
 import { BackgroundControlsProps } from './controls';
-import { ContentPluginConfig } from '@react-page/core/lib/service/plugin/classes';
-import { RGBColor } from '@react-page/ui/lib/ColorPicker/types';
-import { ImageUploadType } from '@react-page/ui/lib/ImageUpload/types';
+import { ContentPluginConfig } from '@react-page-nm/core/lib/service/plugin/classes';
+import { RGBColor } from '@react-page-nm/ui/lib/ColorPicker/types';
+import { ImageUploadType } from '@react-page-nm/ui/lib/ImageUpload/types';
 import { ModeEnum } from './ModeEnum';
 import { Translations } from './translations';
 

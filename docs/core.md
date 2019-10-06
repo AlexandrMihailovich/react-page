@@ -1,4 +1,4 @@
-# Core: [@react-page/core](https://www.npmjs.com/package/@react-page/core)
+# Core: [@react-page-nm/core](https://www.npmjs.com/package/@react-page-nm/core)
 
 The core is the main system of the React Page. It contains the logic for creating and modifying
 layouts and is responsible for handling plugins.
@@ -8,7 +8,7 @@ layouts and is responsible for handling plugins.
 The React Page uses a Redux store to manage the internal state. When creating a new `Editor` instance
 
 ```jsx
-import Editor from '@react-page/core'
+import Editor from '@react-page-nm/core'
 
 const editor = new Editor()
 ```
@@ -17,7 +17,7 @@ the Redux store is created as well. Because of this, it is important to only ins
 application lifetime (this is called the *singleton* pattern).
 
 ```jsx
-import Editor from '@react-page/core'
+import Editor from '@react-page-nm/core'
 
 const editor = new Editor()
 const editor2 = new Editor() // Don't do this.
@@ -36,14 +36,14 @@ Let's take an image plugin for starter. The image plugin is a simple content plu
   </figure>
 </p>
 
-To install the image plugin, we use npm: `npm install @react-page/plugins-image`. Next, we need to add it
+To install the image plugin, we use npm: `npm install @react-page-nm/plugins-image`. Next, we need to add it
 to our editor instance:
 
 ```jsx
-import Editor from '@react-page/core'
+import Editor from '@react-page-nm/core'
 
-import image from '@react-page/plugins-image'
-import '@react-page/plugins-image/lib/index.css'
+import image from '@react-page-nm/plugins-image'
+import '@react-page-nm/plugins-image/lib/index.css'
 
 const editor = new Editor({
   plugins: {
@@ -55,8 +55,8 @@ const editor = new Editor({
 Let's start from top to bottom. First, we import the image plugin and the CSS required for it:
 
 ```jsx
-import image from '@react-page/plugins-image'
-import '@react-page/plugins-image/lib/index.css'
+import image from '@react-page-nm/plugins-image'
+import '@react-page-nm/plugins-image/lib/index.css'
 ```
 
 We assume that you are running webpack with a plugin capable of importing CSS. If this confuses you, go
@@ -102,10 +102,10 @@ In that case, the javascript application will look something like this:
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import Editor, { Editable } from '@react-page/core'
+import Editor, { Editable } from '@react-page-nm/core'
 
-import image from '@react-page/plugins-image'
-import '@react-page/plugins-image/lib/index.css'
+import image from '@react-page-nm/plugins-image'
+import '@react-page-nm/plugins-image/lib/index.css'
 
 const editor = new Editor({
   plugins: {
@@ -125,7 +125,7 @@ All we did was render the `Editable` component using ReactJS and passing the `ed
 To create an empty state, the core exports a method called `createEmptyState`. The result is a JSON object containing, amongst others, a unique id.
 
 ```jsx
-import { createEmptyState } from '@react-page/core'
+import { createEmptyState } from '@react-page-nm/core'
 
 const editable = createEmptyState()
 console.log(editable.id) // gives something like "29fb21c6-6e00-416f-a8e1-2be9fb84801c"
@@ -137,10 +137,10 @@ Adding this to the code from above we get:
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import Editor, { Editable, createEmptyState } from '@react-page/core'
+import Editor, { Editable, createEmptyState } from '@react-page-nm/core'
 
-import image from '@react-page/plugins-image'
-import '@react-page/plugins-image/lib/index.css'
+import image from '@react-page-nm/plugins-image'
+import '@react-page-nm/plugins-image/lib/index.css'
 
 const editable = createEmptyState()
 

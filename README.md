@@ -14,7 +14,7 @@ We try to keep the initial bundle size low so that you can use this library also
 
 We achieve that by lazy-loading using `import()` functions. Most modern bundlers like webpack (e.g. in nextjs) support this kind of lazy loading. So the default editor-ui (based on material-ui) is only loaded if the editor is in editMode.
 
-You can additionally use `@react-page/renderer` to have a minimal renderer.
+You can additionally use `@react-page-nm/renderer` to have a minimal renderer.
 
 ## Documentation
 

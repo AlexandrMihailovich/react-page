@@ -16,7 +16,7 @@ By default we provide the following plugins:
 If you only want to include some plugins, you can specify them:
 
 ```jsx
-import slate, { slatePlugins } from '@react-page/plugins-slate';
+import slate, { slatePlugins } from '@react-page-nm/plugins-slate';
 
 
 const slatePlugin = slate(def => ({
@@ -54,7 +54,7 @@ const editor = new Editor({
 or if you want to add an additional plugin, you can use all default plugins like this:
 
 ```jsx
-import slate, { slatePlugins } from '@react-page/plugins-slate';
+import slate, { slatePlugins } from '@react-page-nm/plugins-slate';
 
 
 const slatePlugin = slate(def => ({
@@ -101,7 +101,7 @@ If you want to create your own slate plugins, we provide a bunch of factory func
   you can import these with:
 
 ```jsx
-import { pluginFactories } from '@react-page/plugins-slate'
+import { pluginFactories } from '@react-page-nm/plugins-slate'
 ```
 
 ### Slate-Plugins with custom data

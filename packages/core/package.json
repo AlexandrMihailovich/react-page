@@ -1,10 +1,10 @@
 {
-  "name": "@react-page/core",
-  "version": "0.0.0",
+  "name": "@react-page-nm/core",
+  "version": "1.0.0",
   "main": "./lib/index.js",
   "module": "./lib-es/index.js",
   "typings": "./lib/index.d.ts",
-  "author": "ORY GmbH",
+  "author": "as",
   "license": "GNU Lesser General Public License v3.0",
   "scripts": {
     "transpile": "babel ./src --out-dir lib --source-maps --copy-files --only **/*.ts,**/*.tsx --extensions .ts,.tsx --ignore **/*.d.ts",

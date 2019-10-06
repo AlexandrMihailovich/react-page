@@ -22,13 +22,13 @@
 import * as React from 'react';
 import { v4 } from 'uuid';
 
-import { LayoutPluginConfig } from '@react-page/core/lib/service/plugin/classes';
+import { LayoutPluginConfig } from '@react-page-nm/core/lib/service/plugin/classes';
 import { BackgroundSettings } from './types/settings';
 import { BackgroundState } from './types/state';
 import { BackgroundProps } from './types/component';
 import BackgroundComponent from './Component';
 import { defaultSettings } from './default/settings';
-import { lazyLoad } from '@react-page/core';
+import { lazyLoad } from '@react-page-nm/core';
 
 const Icon = lazyLoad(() => import('@material-ui/icons/CropLandscape'));
 

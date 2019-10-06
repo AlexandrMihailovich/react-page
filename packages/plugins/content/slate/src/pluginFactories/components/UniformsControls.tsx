@@ -4,7 +4,7 @@ import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 
 import { SlatePluginControls } from '../../types/slatePluginDefinitions';
-import { makeUniformsSchema } from '@react-page/create-plugin-materialui';
+import { makeUniformsSchema } from '@react-page-nm/create-plugin-materialui';
 import { AutoForm, AutoFields } from 'uniforms-material';
 import DeleteIcon from '@material-ui/icons/Delete';
 import DoneIcon from '@material-ui/icons/Done';

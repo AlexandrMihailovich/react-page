@@ -22,7 +22,7 @@
 import * as React from 'react';
 import Devices from '@material-ui/icons/Devices';
 import { connect } from 'react-redux';
-import { Actions, Selectors } from '@react-page/core';
+import { Actions, Selectors } from '@react-page-nm/core';
 
 import { createStructuredSelector } from 'reselect';
 import Button from '../Button/index';
