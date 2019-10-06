@@ -1,6 +1,6 @@
 {
   "name": "react-page-nm-examples",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "private": true,
   "peerDependencies": {
     "react": "^16.8.6",
@@ -15,10 +15,10 @@
     "react-page-nm-plugins-html5-video": "*",
     "react-page-nm-plugins-image": "*",
     "react-page-nm-plugins-parallax-background": "*",
-    "react-page-nm-plugins-slate": "*",
+    "react-page-nm-plugins-slate": "^4.0.2",
     "react-page-nm-plugins-spacer": "*",
     "react-page-nm-plugins-video": "*",
-    "react-page-nm-renderer": "*",
+    "react-page-nm-renderer": "^4.0.2",
     "react-page-nm-ui": "^4.0.1",
     "react-scripts": "2.1.1",
     "source-map-explorer": "^2.0.1",

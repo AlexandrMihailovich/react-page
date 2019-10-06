@@ -1,6 +1,6 @@
 {
   "name": "react-page-nm-react-page",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "author": "as",
   "license": "GNU Lesser General Public License v3.0",
   "dependencies": {
@@ -10,10 +10,10 @@
     "react-page-nm-plugins-divider": "*",
     "react-page-nm-plugins-image": "*",
     "react-page-nm-plugins-parallax-background": "*",
-    "react-page-nm-plugins-slate": "*",
+    "react-page-nm-plugins-slate": "^4.0.2",
     "react-page-nm-plugins-spacer": "*",
     "react-page-nm-plugins-video": "*",
-    "react-page-nm-renderer": "*",
+    "react-page-nm-renderer": "^4.0.2",
     "react-page-nm-ui": "^4.0.1"
   },
   "publishConfig": {
