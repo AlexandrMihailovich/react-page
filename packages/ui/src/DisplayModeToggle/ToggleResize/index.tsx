@@ -20,12 +20,12 @@
  *
  */
 import * as React from 'react';
-import Resize from '@material-ui/icons/SettingsOverscan';
+// import Resize from '@material-ui/icons/SettingsOverscan';
 import { connect } from 'react-redux';
 import { Selectors, Actions } from 'react-page-nm-core';
 import { createStructuredSelector } from 'reselect';
 
-import Button from '../Button/index';
+// import Button from '../Button/index';
 
 export interface InnerReduxProps {
   isResizeMode: boolean;
@@ -35,20 +35,31 @@ export interface InnerActionProps {
   resizeMode: React.MouseEventHandler<HTMLElement>;
 }
 
+export interface RenderProps {
+  description: string;
+  active: boolean;
+  onClick: (event: React.MouseEvent<HTMLElement, MouseEvent>) => void;
+}
+
 interface OwnProps {
   label: string;
+  children: (props: RenderProps) => React.ReactElement;
 }
 
 export type InnerProps = InnerReduxProps & InnerActionProps & OwnProps;
 
-const Inner: React.SFC<InnerProps> = props => (
+const Inner: React.SFC<InnerProps> = ({ children, label, isResizeMode, resizeMode }) => children({
+  description: label,
+  active: isResizeMode,
+  onClick: resizeMode
+});  /*(
   <Button
     icon={<Resize />}
     description={props.label}
     active={props.isResizeMode}
     onClick={props.resizeMode}
   />
-);
+);*/
 
 const mapStateToProps = createStructuredSelector({
   isResizeMode: Selectors.Display.isResizeMode,

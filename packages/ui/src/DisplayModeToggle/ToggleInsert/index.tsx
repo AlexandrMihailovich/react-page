@@ -20,8 +20,8 @@
  *
  */
 import * as React from 'react';
-import ContentAdd from '@material-ui/icons/Add';
-import Button from '../Button/index';
+// import ContentAdd from '@material-ui/icons/Add';
+// import Button from '../Button/index';
 
 import { connect } from 'react-redux';
 
@@ -37,20 +37,32 @@ export interface InnerActionProps {
   insertMode: React.MouseEventHandler<HTMLElement>;
 }
 
+export interface RenderProps {
+  description: string;
+  active: boolean;
+  onClick: (event: React.MouseEvent<HTMLElement, MouseEvent>) => void;
+}
+
 interface OwnProps {
   label: string;
+  children: (props: RenderProps) => React.ReactElement;
 }
 
 export type InnerProps = InnerReduxProps & InnerActionProps & OwnProps;
 
-const Inner: React.SFC<InnerProps> = props => (
+const Inner: React.SFC<InnerProps> = ({ children, label, isInsertMode, insertMode }) => children({
+  description: label,
+  active: isInsertMode,
+  onClick: insertMode
+});
+/*(
   <Button
     icon={<ContentAdd />}
     description={props.label}
     active={props.isInsertMode}
     onClick={props.insertMode}
   />
-);
+);*/
 
 const mapStateToProps = createStructuredSelector({
   isInsertMode: Selectors.Display.isInsertMode,

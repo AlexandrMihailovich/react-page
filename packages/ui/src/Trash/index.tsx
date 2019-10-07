@@ -22,8 +22,8 @@
 
 import * as React from 'react';
 import { DropTarget as dropTarget } from 'react-dnd';
-import Delete from '@material-ui/icons/Delete';
-import Fab from '@material-ui/core/Fab';
+// import Delete from '@material-ui/icons/Delete';
+// import Fab from '@material-ui/core/Fab';
 import { Editor, Actions, Selectors } from 'react-page-nm-core';
 import { connect } from 'react-redux';
 import classNames from 'classnames';
@@ -65,6 +65,7 @@ const connectMonitor = (_connect: any, monitor: any) => ({
 });
 
 export interface RawProps {
+  renderFunc: (isOverCurrent: boolean) => React.ReactNode;
   editor: Editor;
   isLayoutMode: boolean;
   isOverCurrent: boolean;
@@ -73,7 +74,7 @@ export interface RawProps {
 
 class Raw extends React.Component<RawProps> {
   render() {
-    const { connectDropTarget, isOverCurrent } = this.props;
+    const { connectDropTarget, isOverCurrent, renderFunc } = this.props;
 
     return connectDropTarget(
       <div
@@ -81,9 +82,10 @@ class Raw extends React.Component<RawProps> {
           'ory-controls-trash-active': this.props.isLayoutMode,
         })}
       >
-        <Fab color="secondary" disabled={!isOverCurrent}>
+        {renderFunc(!isOverCurrent)}
+        {/* <Fab color="secondary" disabled={!isOverCurrent}>
           <Delete />
-        </Fab>
+        </Fab> */}
       </div>
     );
   }
@@ -118,10 +120,13 @@ const Decorated: any = connect(
   mapDispatchToProps
 )(dropTarget(types, target, connectMonitor)(Raw));
 
-const Trash: React.SFC = () => {
+export interface TrashProps {
+  renderFunc: (isOverCurrent: boolean) => React.ReactNode;
+}
+const Trash: React.SFC<TrashProps> = ({ renderFunc}) => {
   const editor = useEditor();
 
-  return <Decorated editor={editor} />;
+  return <Decorated renderFunc={renderFunc} editor={editor} />;
 };
 
 export default Trash;

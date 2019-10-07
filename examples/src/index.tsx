@@ -65,7 +65,7 @@ import 'react-page-nm-plugins-html5-video/lib/index.css';
 import native from 'react-page-nm-plugins-default-native';
 
 // The divider plugin
-import divider from 'react-page-nm-plugins-divider';
+// import divider from 'react-page-nm-plugins-divider';
 
 // Renders json state to html, can be used on server and client side
 import { HTMLRenderer } from 'react-page-nm-renderer';
@@ -117,7 +117,7 @@ const plugins: Plugins = {
     spacer,
     imagePlugin({ imageUpload: fakeImageUploadService('/images/react.png') }),
     video,
-    divider,
+    // divider,
     html5video,
     customContentPlugin(),
   ],

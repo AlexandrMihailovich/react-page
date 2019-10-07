@@ -1,8 +1,8 @@
 import * as React from 'react';
-import Button from '@material-ui/core/Button';
-import CircularProgress from '@material-ui/core/CircularProgress';
-import CloudUploadIcon from '@material-ui/icons/CloudUpload';
-import ErrorIcon from '@material-ui/icons/Error';
+// import Button from '@material-ui/core/Button';
+// import CircularProgress from '@material-ui/core/CircularProgress';
+// import CloudUploadIcon from '@material-ui/icons/CloudUpload';
+// import ErrorIcon from '@material-ui/icons/Error';
 import { ImageLoaded, ImageUploadType, ImageUploaded } from './types';
 import { defaultTranslations } from './defaultTranslations';
 
@@ -32,7 +32,7 @@ export type ImageUploadState = {
 
 class ImageUpload extends React.Component<ImageUploadProps, ImageUploadState> {
   static defaultProps = {
-    icon: <CloudUploadIcon style={{ marginLeft: '8px' }} />,
+    icon: <span>iconca</span>,//<CloudUploadIcon style={{ marginLeft: '8px' }} />,
     allowedExtensions: ['jpg', 'jpeg', 'png'],
     maxFileSize: 5242880,
     translations: defaultTranslations,
@@ -137,13 +137,13 @@ class ImageUpload extends React.Component<ImageUploadProps, ImageUploadState> {
 
   renderChildren = () => {
     if (this.state.isUploading) {
-      return <CircularProgress value={this.state.progress} size={19} />;
+      return <div>load</div>;//<CircularProgress value={this.state.progress} size={19} />;
     }
     if (this.state.hasError) {
       return (
         <React.Fragment>
           {this.state.errorText}
-          <ErrorIcon style={{ marginLeft: '8px' }} />
+          <div>error</div>
         </React.Fragment>
       );
     }
@@ -158,15 +158,15 @@ class ImageUpload extends React.Component<ImageUploadProps, ImageUploadState> {
   render() {
     return (
       <React.Fragment>
-        <Button
+        <button
           disabled={this.state.isUploading}
-          variant="contained"
-          color={this.state.hasError ? 'secondary' : 'primary'}
+          // variant="contained"
+          // color={this.state.hasError ? 'secondary' : 'primary'}
           onClick={this.handleFileUploadClick}
           style={this.props.style}
         >
           {this.renderChildren()}
-        </Button>
+        </button>
         {!this.state.isUploading && (
           <input
             style={{ display: 'none' }}

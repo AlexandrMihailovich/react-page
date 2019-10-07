@@ -4,10 +4,10 @@
   "author": "as",
   "license": "GNU Lesser General Public License v3.0",
   "dependencies": {
-    "react-page-nm-core": "*",
+    "react-page-nm-core": "^4.0.0",
     "react-page-nm-plugins-background": "^4.0.3",
-    "react-page-nm-plugins-default-native": "*",
-    "react-page-nm-plugins-divider": "*",
+    "react-page-nm-plugins-default-native": "^4.0.1",
+    "react-page-nm-plugins-divider": "^4.0.1",
     "react-page-nm-plugins-image": "^4.0.3",
     "react-page-nm-plugins-parallax-background": "^4.0.3",
     "react-page-nm-plugins-slate": "^4.0.3",

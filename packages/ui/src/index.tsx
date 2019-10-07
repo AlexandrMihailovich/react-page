@@ -17,7 +17,7 @@ const Provider = loadable(() => import('./Provider'));
 
 export default ({ editor }) => (
   <Provider editor={editor}>
-    <Trash />
+    <Trash renderFunc={(isOverCurrent: boolean) => <div>remove { isOverCurrent }</div>} />
     <DisplayModeToggle />
     <Toolbar />
   </Provider>

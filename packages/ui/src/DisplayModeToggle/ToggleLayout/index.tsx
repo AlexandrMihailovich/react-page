@@ -20,8 +20,8 @@
  *
  */
 import * as React from 'react';
-import ViewQuilt from '@material-ui/icons/ViewQuilt';
-import Button from '../Button';
+// import ViewQuilt from '@material-ui/icons/ViewQuilt';
+// import Button from '../Button';
 
 import { connect } from 'react-redux';
 
@@ -36,21 +36,31 @@ export interface InnerReduxProps {
 export interface InnerActionProps {
   layoutMode: React.MouseEventHandler<HTMLElement>;
 }
+export interface RenderProps {
+  description: string;
+  active: boolean;
+  onClick: (event: React.MouseEvent<HTMLElement, MouseEvent>) => void;
+}
 
 interface OwnProps {
   label: string;
+  children: (props: RenderProps) => React.ReactElement;
 }
 
 export type InnerProps = InnerReduxProps & InnerActionProps & OwnProps;
 
-const Inner: React.SFC<InnerProps> = props => (
+const Inner: React.SFC<InnerProps> = ({ children, label, isLayoutMode, layoutMode }) => children({
+  description: label,
+  active: isLayoutMode,
+  onClick: layoutMode
+}); /*(
   <Button
     icon={<ViewQuilt />}
     description={props.label}
     active={props.isLayoutMode}
     onClick={props.layoutMode}
   />
-);
+);*/
 
 const mapStateToProps = createStructuredSelector({
   isLayoutMode: Selectors.Display.isLayoutMode,

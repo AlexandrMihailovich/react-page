@@ -40,27 +40,37 @@ const Inner: React.SFC<{ translations?: typeof defaultTranslations }> = ({
 }) => (
   <div className="ory-controls-mode-toggle-control-group">
     <div className="ory-controls-mode-toggle-control">
-      <ToggleEdit label={translations.edit} />
+      <ToggleEdit label={translations.edit} >
+          {({ onClick }) => <div onClick={onClick}>Edit</div>}
+      </ToggleEdit>
       <div className="ory-controls-mode-toggle-clearfix" />
     </div>
 
     <div className="ory-controls-mode-toggle-control">
-      <ToggleInsert label={translations.insert} />
+      <ToggleInsert label={translations.insert} >
+          {({ onClick }) => <div onClick={onClick}>Insert</div>}
+      </ToggleInsert>
       <div className="ory-controls-mode-toggle-clearfix" />
     </div>
 
     <div className="ory-controls-mode-toggle-control">
-      <ToggleLayout label={translations.layout} />
+      <ToggleLayout label={translations.layout} >
+          {({ onClick }) => <div onClick={onClick}>Layout</div>}
+      </ToggleLayout>
       <div className="ory-controls-mode-toggle-clearfix" />
     </div>
 
     <div className="ory-controls-mode-toggle-control">
-      <ToggleResize label={translations.resize} />
+      <ToggleResize label={translations.resize} >
+          {({ onClick }) => <div onClick={onClick}>Resize</div>}
+      </ToggleResize>
       <div className="ory-controls-mode-toggle-clearfix" />
     </div>
 
     <div className="ory-controls-mode-toggle-control">
-      <TogglePreview label={translations.preview} />
+      <TogglePreview label={translations.preview} >
+          {({ onClick }) => <div onClick={onClick}>Preview</div>}
+      </TogglePreview>
       <div className="ory-controls-mode-toggle-clearfix" />
     </div>
   </div>

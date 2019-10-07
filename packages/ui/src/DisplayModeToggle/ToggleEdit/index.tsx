@@ -20,8 +20,8 @@
  *
  */
 import * as React from 'react';
-import Create from '@material-ui/icons/Create';
-import Button from '../Button/index';
+// import Create from '@material-ui/icons/Create';
+// import Button from '../Button/index';
 
 import { connect } from 'react-redux';
 
@@ -36,20 +36,31 @@ export interface InnerActionProps {
   editMode: React.MouseEventHandler<HTMLElement>;
 }
 
+export interface RenderProps {
+  description: string;
+  active: boolean;
+  onClick: (event: React.MouseEvent<HTMLElement, MouseEvent>) => void;
+}
+
 interface OwnProps {
   label: string;
+  children: (props: RenderProps) => React.ReactElement;
 }
 
 export type InnerProps = InnerReduxProps & InnerActionProps & OwnProps;
 
-const Inner: React.SFC<InnerProps> = props => (
+const Inner: React.FC<InnerProps> = ({ children, label, isEditMode, editMode }) => children({
+    description: label,
+    active: isEditMode,
+    onClick: editMode
+  });/*(
   <Button
     icon={<Create />}
     description={props.label}
     active={props.isEditMode}
     onClick={props.editMode}
   />
-);
+);*/
 
 const mapStateToProps = createStructuredSelector({
   isEditMode: Selectors.Display.isEditMode,
