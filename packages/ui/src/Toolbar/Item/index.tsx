@@ -23,7 +23,7 @@ import * as React from 'react';
 import Avatar from '@material-ui/core/Avatar';
 import draggable from '../Draggable/index';
 import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
+// import ListItemText from '@material-ui/core/ListItemText';
 import { Plugin } from 'react-page-nm-core/lib/service/plugin/classes';
 import DragHandle from '@material-ui/icons/DragHandle';
 import Tooltip from 'rc-tooltip';
@@ -74,7 +74,7 @@ class Item extends React.Component<ItemProps, ItemState> {
             marginRight: 16,
           }}
         />
-        <ListItemText primary={plugin.text} secondary={plugin.description} />
+        <div> primary={plugin.text} secondary={plugin.description} </div>
         <span
           className="ory-toolbar-item-drag-handle-button"
           onMouseEnter={this.onMouseEnter}
