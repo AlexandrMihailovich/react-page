@@ -20,23 +20,23 @@
  *
  */
 import * as React from 'react';
-import Drawer from '@material-ui/core/Drawer';
+// import Drawer from '@material-ui/core/Drawer';
 import { connect } from 'react-redux';
 import { Selectors, Editor } from 'react-page-nm-core';
 import { createStructuredSelector } from 'reselect';
 
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListSubheader from '@material-ui/core/ListSubheader';
-import TextField from '@material-ui/core/TextField';
-import {
-  LayoutPlugin,
-  ContentPlugin
-} from 'react-page-nm-core/lib/service/plugin/classes';
-import Item from './Item/index';
+// import List from '@material-ui/core/List';
+// import ListItem from '@material-ui/core/ListItem';
+// import ListSubheader from '@material-ui/core/ListSubheader';
+// import TextField from '@material-ui/core/TextField';
+// import {
+  // LayoutPlugin,
+  // ContentPlugin
+// } from 'react-page-nm-core/lib/service/plugin/classes';
+// import Item from './Item/index';
 
 import { useEditor } from './../Provider/index';
-import { Plugin } from 'react-page-nm-core/lib/service/plugin/classes';
+// import { Plugin } from 'react-page-nm-core/lib/service/plugin/classes';
 
 export interface Translations {
   noPluginFoundContent: string | JSX.Element;
@@ -47,7 +47,7 @@ export interface Translations {
   dragMe: string;
 }
 
-const defaultTranslations: Translations = {
+export const defaultTranslations: Translations = {
   noPluginFoundContent: 'No plugins found',
   searchPlaceholder: 'Search plugins',
   layoutPlugins: 'Layout plugins',
@@ -56,18 +56,18 @@ const defaultTranslations: Translations = {
   dragMe: 'Drag me!',
 };
 
-type Props = {
+export type Props = {
   isInsertMode: boolean;
   editor: Editor;
   translations?: Translations;
 };
-
+/*
 interface RawState {
   isSearching: boolean;
   searchText: string;
 }
-
-class Raw extends React.Component<Props, RawState> {
+*/
+/*class Raw extends React.Component<Props, RawState> {
   static defaultProps = {
     translations: defaultTranslations,
   };
@@ -216,17 +216,28 @@ class Raw extends React.Component<Props, RawState> {
       </Drawer>
     );
   }
-}
+}*/
 
 const mapStateToProps = createStructuredSelector({
   isInsertMode: Selectors.Display.isInsertMode,
 });
 
-const Decorated = connect(mapStateToProps)(Raw);
+// const Decorated = connect(mapStateToProps)(Raw);
 
-const Toolbar: React.SFC = () => {
-  const editor = useEditor();
-  return <Decorated editor={editor} />;
-};
+export interface ToolbarProps {
 
-export default Toolbar;
+}
+
+// const Toolbar: React.FC<ToolbarProps> = () => {
+//   const editor = useEditor();
+//   return <Decorated editor={editor} />;
+// };
+
+export const ToolbarCreator = (Component: React.ComponentType<Props>): React.FC<ToolbarProps> => {
+  const Decorated = connect(mapStateToProps)(Component);
+  return () => {
+    const editor = useEditor();
+    return <Decorated editor={editor} />;
+  };
+}
+// export default Toolbar;

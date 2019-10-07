@@ -3,7 +3,7 @@ import loadable from '@loadable/component';
 import React from 'react';
 import darkTheme from './ThemeProvider/DarkTheme';
 const Trash = loadable(() => import('./Trash/index'));
-const Toolbar = loadable(() => import('./Toolbar/index'));
+// const Toolbar = loadable(() => import('./Toolbar/index'));
 const DisplayModeToggle = loadable(() => import('./DisplayModeToggle/index'));
 const BottomToolbar = loadable(() => import('./BottomToolbar/index'));
 const ThemeProvider = loadable(() => import('./ThemeProvider/index'));
@@ -19,13 +19,13 @@ export default ({ editor }) => (
   <Provider editor={editor}>
     <Trash renderFunc={(isOverCurrent: boolean) => <div>remove { isOverCurrent }</div>} />
     <DisplayModeToggle />
-    <Toolbar />
+    {/* <Toolbar /> */}
   </Provider>
 );
 export {
   Provider,
   Trash,
-  Toolbar,
+  // Toolbar,
   DisplayModeToggle,
   BottomToolbar,
   ThemeProvider,
