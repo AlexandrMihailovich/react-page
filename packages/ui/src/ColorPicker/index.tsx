@@ -82,3 +82,8 @@ class ColorPicker extends React.Component<ColorPickerProps> {
 }
 
 export default ColorPicker;
+
+
+export const ColorPickerCreator = () => {
+  
+}

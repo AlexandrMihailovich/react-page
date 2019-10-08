@@ -20,10 +20,10 @@
  *
  */
 
-import Drawer from '@material-ui/core/Drawer';
+// import Drawer from '@material-ui/core/Drawer';
 import * as React from 'react';
 
-import ThemeProvider, { darkTheme } from '../ThemeProvider';
+// import ThemeProvider, { darkTheme } from '../ThemeProvider';
 
 const darkBlack = 'rgba(0, 0, 0, 0.87)';
 const bright = 'rgba(255,255,255, 0.98)';
@@ -43,37 +43,27 @@ const BottomToolbar: React.SFC<BottomToolbar> = ({
   dark = false,
   anchor = 'bottom',
 }) => (
-  <ThemeProvider theme={dark ? darkTheme : null}>
-    <Drawer
-      SlideProps={{
-        unmountOnExit: true,
-      }}
-      variant="persistent"
-      className={className}
-      open={open}
-      anchor={anchor}
-      PaperProps={{
-        style: {
-          backgroundColor: 'transparent',
-          border: 'none',
-          overflow: 'visible',
-        },
-      }}
-    >
-      <div
-        style={{
-          border: `${dark ? darkBlack : brightBorder} 1px solid`,
-          borderRadius: '4px 4px 0 0',
-          backgroundColor: dark ? darkBlack : bright,
-          padding: '12px 24px',
-          margin: 'auto',
-          boxShadow: '0px 1px 6px -1px rgba(0,0,0,0.2)',
-        }}
-      >
-        {children}
-      </div>
-    </Drawer>
-  </ThemeProvider>
-);
+    // <ThemeProvider theme={dark ? darkTheme : null}>
+    <div className={'BottomToolbar ' + className} style={{
+      backgroundColor: 'transparent',
+      border: 'none',
+      overflow: 'visible',
+      display: open ? 'block' : 'none'
+    }}>
+        <div
+          style={{
+            border: `${dark ? darkBlack : brightBorder} 1px solid`,
+            borderRadius: '4px 4px 0 0',
+            backgroundColor: dark ? darkBlack : bright,
+            padding: '12px 24px',
+            margin: 'auto',
+            boxShadow: '0px 1px 6px -1px rgba(0,0,0,0.2)',
+          }}
+        >
+          {children}
+        </div>
+    </div>
+    // </ThemeProvider>
+  );
 
 export default BottomToolbar;

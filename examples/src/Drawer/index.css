@@ -1,0 +1,17 @@
+.Drawer {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+  border: 1px solid #000;
+  width: 350px;
+  transition: all .3s linear;
+}
+
+.Drawer__open {
+  left: 0;
+}
+
+.Drawer__close {
+  left: -370px;
+}

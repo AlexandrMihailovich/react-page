@@ -83,11 +83,12 @@ import { ImageUploadType } from 'react-page-nm-ui/lib/ImageUpload/types';
 import { Plugins } from 'react-page-nm-core';
 import customSlatePlugin from './customSlatePlugin';
 
-import Drawer from '@material-ui/core/Drawer';
+import Drawer from './Drawer';
+// import Drawer from '@material-ui/core/Drawer';
 import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
+// import ListItem from '@material-ui/core/ListItem';
 import ListSubheader from '@material-ui/core/ListSubheader';
-import TextField from '@material-ui/core/TextField';
+// import TextField from '@material-ui/core/TextField';
 import {
   LayoutPlugin,
   ContentPlugin
@@ -112,8 +113,8 @@ class Raw extends React.Component<Props, RawState> {
       searchText: '',
     };
 
-    this.onSearch = this.onSearch.bind(this);
-    this.searchFilter = this.searchFilter.bind(this);
+    // this.onSearch = this.onSearch.bind(this);
+    // this.searchFilter = this.searchFilter.bind(this);
   }
 
   componentDidUpdate() {
@@ -132,7 +133,7 @@ class Raw extends React.Component<Props, RawState> {
     this.input = component;
   }
 
-  onSearch: React.ChangeEventHandler<HTMLInputElement> = e => {
+  /*onSearch: React.ChangeEventHandler<HTMLInputElement> = e => {
     const target = e.target;
     if (target instanceof HTMLInputElement) {
       this.setState({
@@ -148,14 +149,14 @@ class Raw extends React.Component<Props, RawState> {
       plugin.name &&
       plugin.name.toLowerCase().startsWith(this.state.searchText.toLowerCase())
     );
-  }
+  }*/
 
   render() {
     const {
       editor: { plugins },
     } = this.props;
-    const content = plugins.plugins.content!.filter(this.searchFilter);
-    const layout = plugins.plugins.layout!.filter(this.searchFilter);
+    const content = plugins.plugins.content || []//!.filter(this.searchFilter);
+    const layout = plugins.plugins.layout || []//!.filter(this.searchFilter);
 
     return (
       <Drawer
@@ -168,7 +169,7 @@ class Raw extends React.Component<Props, RawState> {
           },
         }}
       >
-        <List
+        {/* <List
           subheader={
             <ListSubheader>
               {this.props.translations!.insertPlugin}
@@ -188,7 +189,7 @@ class Raw extends React.Component<Props, RawState> {
               {this.props.translations!.noPluginFoundContent}
             </ListSubheader>
           )}
-        </List>
+        </List> */}
         {content.length > 0 && (
           <List
             subheader={
